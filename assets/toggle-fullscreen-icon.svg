@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+    <polyline class="ql-even ql-stroke" points="12 3 15 3 15 6" />
+    <polyline class="ql-even ql-stroke" points="6 15 3 15 3 12" />
+    <polyline class="ql-even ql-stroke" points="12 15 15 15 15 12" />
+    <polyline class="ql-even ql-stroke" points="6 3 3 3 3 6" />
+</svg>
