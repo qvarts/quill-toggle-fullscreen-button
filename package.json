@@ -7,10 +7,12 @@
   "main": "./dist/quill.toggleFullscreenButton.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
-    "start": "npm run build:dev && webpack serve"
+    "build": "npm run build:prod",
+    "start": "npm run build:dev && webpack serve",
+    "lint": "eslint . --ext .ts,.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "quill",
@@ -25,10 +27,13 @@
     "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.20.2",
     "@types/quill": "^1.3.7",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
     "@webpack-cli/generators": "^3.0.1",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.0",
     "css-loader": "^6.7.2",
+    "eslint": "^8.30.0",
     "filemanager-webpack-plugin": "^8.0.0",
     "html-webpack-plugin": "^5.5.0",
     "postcss": "^8.4.19",
