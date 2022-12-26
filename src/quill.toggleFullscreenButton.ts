@@ -87,9 +87,6 @@ export default class QuillToggleFullscreenButton {
     }
 
     // if NOT IN fullscreen mode
-    let toolbarHeight = this._toolbarEl.offsetHeight;
-
-    // create wrapper
     editorWrapEl = document.createElement('div');
     editorWrapEl.classList.add('ql-editor-wrap');
     editorWrapEl.style.position = 'fixed';
@@ -101,8 +98,9 @@ export default class QuillToggleFullscreenButton {
     editorWrapEl.style.zIndex = '9999';
 
     if (editorContainer instanceof HTMLElement) {
-      editorContainer.classList.add('is-fullscreen');
+      const toolbarHeight = this._toolbarEl.offsetHeight;
       editorContainer.style.height = `calc(100% - ${toolbarHeight}px)`;
+      editorContainer.classList.add('is-fullscreen');
     }
 
     // moves editor elements inside the wrapper
