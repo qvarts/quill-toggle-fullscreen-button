@@ -83,6 +83,9 @@ export default class QuillToggleFullscreenButton {
         e.currentTarget.classList.remove('ql-active');
       }
 
+      // restoring page scroll bars, when in normal mode
+      document.documentElement.style.removeProperty('overflow');
+
       return;
     }
 
@@ -90,8 +93,7 @@ export default class QuillToggleFullscreenButton {
     editorWrapEl = document.createElement('div');
     editorWrapEl.classList.add('ql-editor-wrap');
     editorWrapEl.style.position = 'fixed';
-    editorWrapEl.style.top = '0';
-    editorWrapEl.style.left = '0';
+    editorWrapEl.style.inset = '0';
     editorWrapEl.style.width = '100%';
     editorWrapEl.style.height = '100%';
     editorWrapEl.style.backgroundColor = 'white';
@@ -111,6 +113,9 @@ export default class QuillToggleFullscreenButton {
     if (e.currentTarget instanceof Element) {
       e.currentTarget.classList.add('ql-active');
     }
+
+    // hiding page scroll bars, when in fullscreen mode
+    document.documentElement.style.overflow = 'hidden';
   }
 }
 
