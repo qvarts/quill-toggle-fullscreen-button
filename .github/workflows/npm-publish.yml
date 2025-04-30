@@ -3,6 +3,10 @@
 
 name: Node.js Package
 
+permissions:
+  contents: read
+  pull-requests: write
+
 on:
   release:
     types: [published]
