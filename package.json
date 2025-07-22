@@ -1,7 +1,7 @@
 {
   "name": "quill-toggle-fullscreen-button",
   "description": "Quill module which adds a toggle fullscreen button to the Quill editor toolbar.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Vitaliy Kolobanov <vitaliy.kolobanov@yahoo.com>",
   "license": "MIT",
   "main": "./dist/quill.toggleFullscreenButton.js",
