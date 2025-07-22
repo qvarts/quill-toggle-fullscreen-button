@@ -12,8 +12,10 @@ npm install quill-toggle-fullscreen-button --save
 ## Usage
 
 First, [set up a Quill editor](https://quilljs.com/docs/quickstart/).
+<br>
+<br>
 
-Next, load `quill-toggle-fullscreen-button` through any of the options 
+Next, load `quill-toggle-fullscreen-button` module through any of the options 
 presented by [UMD](https://github.com/umdjs/umd).
 
 Load script in HTML:
@@ -33,6 +35,7 @@ Using CommonJS-style `require`:
 ```javascript
 const QuillToggleFullscreenButton = require('quill-toggle-fullscreen-button');
 ```
+<br>
 
 Then, register the `quill-toggle-fullscreen-button` module:
 
@@ -45,6 +48,7 @@ const quill = new Quill('#editor', {
   }
 });
 ```
+<br>
 
 For an example setup, see the
 [example code](example), which can be run with:
@@ -52,6 +56,11 @@ For an example setup, see the
 ```bash
 npm start
 ```
+<br>
+
+To see the demo page, follow [this](https://qvarts.github.io/quill-toggle-fullscreen-button/) link.
+<br>
+<br>
 
 ## API
 
