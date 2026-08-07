@@ -13,13 +13,14 @@
     "declaration": true,
     "allowJs": true,
     "checkJs": false,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
+    "rootDir": "./src",
     "outDir": "./dist/"
   },
   "include": [
-    "src/**/*",
+    "src/**/*"
   ],
   "exclude": [
-    "node_modules",
+    "node_modules"
   ]
 }
