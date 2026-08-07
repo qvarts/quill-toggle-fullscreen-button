@@ -1,7 +1,6 @@
 import {Quill} from 'quill';
 import QuillFullscreenButtonOptions from "./options";
-
-const toggleFullscreenIcon = require("../assets/toggle-fullscreen-icon.svg") as string;
+import toggleFullscreenIcon from '../assets/toggle-fullscreen-icon.svg';
 
 export default class QuillToggleFullscreenButton {
   public static DEFAULTS: QuillFullscreenButtonOptions = {
